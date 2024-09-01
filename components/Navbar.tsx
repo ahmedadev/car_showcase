@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import CustumButton from "./CustumButton";
@@ -19,6 +19,7 @@ const Navbar = ({}: NavbarProps) => {
         <CustumButton
           title={"Sign In"}
           type={"button"}
+          containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
           handleClick={() => {}}
         />
       </nav>
