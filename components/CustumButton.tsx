@@ -1,11 +1,11 @@
 "use client"
 import { CustomButtonProps } from '@/types'
 
-const CustumButton = ({title,handleClick,containerStyles}:CustomButtonProps) => {
+const CustumButton = ({title,type="button",handleClick,containerStyles}:CustomButtonProps) => {
 	return (
 		<button
 			disabled={false}
-			type='button'
+			type={type}
 			className={'custom-btn '+containerStyles}
 			onClick={handleClick}
 		>
